@@ -1,0 +1,36 @@
+//Шрифт по умолчанию  ==================================/
+$fontFamily: 'Steppe', sans-serif;
+
+// Контейнер ===========================================/
+$minWidth: 32rem;
+$maxWidth: 164rem;
+$lockWidth: 76.8rem;
+
+// цвета ===========================================/
+$bgColor: #192f2d;
+$hoverColor: #278d9f;
+$textColor: #fff;
+
+// шрифты ==========================================/
+$NeuchaFont: 'Neucha', sans-serif;
+$steppeFont: 'Steppe', sans-serif;
+
+// @extend %greenhover;
+%greenhover {
+  filter: invert(57%) sepia(100%) saturate(329%) hue-rotate(141deg) brightness(89%) contrast(90%);
+}
+
+// @extend %checkarrow
+
+%checkarrow {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 9px;
+  width: 10px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+}

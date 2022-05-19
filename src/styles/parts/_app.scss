@@ -1,0 +1,85 @@
+// глобальные стили ======================================/
+body {
+  font-family: $fontFamily;
+  font-weight: 400;
+  height: 100%;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+section::-webkit-scrollbar {
+  width: 1rem;
+}
+
+section::-webkit-scrollbar-thumb {
+  background: $hoverColor;
+}
+
+section::-webkit-scrollbar-track {
+  background: $bgColor;
+}
+
+//Оболочка =============================================/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+//Контейнер ============================================/
+.container {
+  max-width: $maxWidth;
+  width: 100%;
+  height: 100%;
+  padding: 0rem 1.5rem;
+  margin: 0 auto;
+}
+
+// стили =====================================================/
+.page {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  background-image: url('../assets/images/bg.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.3s ease-in 0s;
+  overflow-y: auto;
+}
+
+section:target {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+// Части =====================================================/
+@import './header';
+@import './main';
+@import './toys';
+@import './tree';
+@import '../utils/snowflakes';
+@import '../utils//garland';
+@import './footer';
+@import './modal';
+@import './media';

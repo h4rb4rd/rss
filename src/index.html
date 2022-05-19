@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico" />
+    <title>Christmas</title>
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <!-- container -->
+        <div class="header__container container">
+          <!-- content -->
+          <div class="header__content header-content">
+            <!-- menu -->
+            <nav class="header-content__menu header-menu" id="navLinks">
+              <a href="#main-page" class="header-menu__link header-menu__link--logo" data-link="logo"></a>
+              <a href="#toys-page" class="header-menu__link hide" data-link="toys">Игрушки</a>
+              <a href="#tree-page" class="header-menu__link hide" data-link="tree">Ёлка</a>
+            </nav>
+            <!-- controls -->
+            <div class="header-content__controls header-controls hide" id="headerControls">
+              <button class="header-controls__clear" id="clearStorage">Clear local storage</button>
+              <!-- search bar -->
+              <input
+                class="header-controls__search"
+                type="search"
+                autocomplete="off"
+                id="searchBar"
+                placeholder="Введите название"
+              />
+              <!-- counter -->
+              <div class="header-controls__select"><span id="favoritesTotal">0</span></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- main -->
+      <main class="page">
+        <section class="page__main main-page" id="main-page">
+          <div class="main-page__ball main-page__ball--1"></div>
+          <div class="main-page__ball main-page__ball--2"></div>
+          <!-- offer -->
+          <div class="main-page__offer main-offer">
+            <h1 class="main-offer__title">
+              Новогодняя игра <br />
+              «Наряди ёлку»
+            </h1>
+            <a href="#toys-page" class="main-offer__button" id="mainLink" data-link="main">Начать</a>
+          </div>
+        </section>
+        <section class="page__toys toys-page" id="toys-page">
+          <!-- container -->
+          <div class="toys-page__container container">
+            <!-- content -->
+            <div class="toys-page__content toys-content">
+              <!-- controls -->
+              <div class="toys-content__controls toys-controls">
+                <!-- filters -->
+                <div class="toys-controls__filters toys-filters">
+                  <h2 class="toys-filters__title controls-title">Фильтры по значению</h2>
+                  <!-- shape -->
+                  <div class="toys-filters__shape toys-shape">
+                    <h3 class="toys-shape__title filter-title">Форма:</h3>
+                    <!-- buttons -->
+                    <div class="toys-shape__buttons filter-buttons" id="shapeButtons">
+                      <button data-filter="шар"></button>
+                      <button data-filter="колокольчик"></button>
+                      <button data-filter="шишка"></button>
+                      <button data-filter="снежинка"></button>
+                      <button data-filter="фигурка"></button>
+                    </div>
+                  </div>
+                  <!-- color -->
+                  <div class="toys-filters__color toys-color">
+                    <h3 class="toys-color__title filter-title">Цвет:</h3>
+                    <!-- buttons -->
+                    <div class="toys-color__buttons filter-buttons" id="colorButtons">
+                      <button data-filter="белый"></button>
+                      <button data-filter="желтый"></button>
+                      <button data-filter="красный"></button>
+                      <button data-filter="синий"></button>
+                      <button data-filter="зелёный"></button>
+                    </div>
+                  </div>
+                  <!-- size -->
+                  <div class="toys-filters__size toys-size">
+                    <h3 class="toys-size__title filter-title">Размер:</h3>
+                    <!-- buttons -->
+                    <div class="toys-size__buttons filter-buttons" id="sizeButtons">
+                      <button data-filter="большой"></button>
+                      <button data-filter="средний"></button>
+                      <button data-filter="малый"></button>
+                    </div>
+                  </div>
+                  <!-- favorite -->
+                  <div class="toys-filters__favorite toys-favorite">
+                    <h3 class="toys-favorite__title filter-title">Только любимые:</h3>
+                    <!-- checkbox -->
+                    <div class="toys-favorite__checkbox">
+                      <input class="toys-favorite__input" id="favoriteCheckbox" type="checkbox" />
+                      <label class="toys-favorite__label" for="favoriteCheckbox"></label>
+                    </div>
+                  </div>
+                </div>
+                <!-- range -->
+                <div class="toys-controls__range toys-range">
+                  <h2 class="toys-range__title controls-title">Фильтры по диапазону</h2>
+                  <!-- count -->
+                  <div class="toys-range__count toys-count">
+                    <h3 class="toys-count__title range-title">Количество экземпляров:</h3>
+                    <!-- slider -->
+                    <div class="toys-count__slider range-slider">
+                      <output class="range-slider__output" id="leftCountOutput"></output>
+                      <div class="range-slider__track" id="countRangeSlider"></div>
+                      <output class="range-slider__output" id="rightCountOutput"></output>
+                    </div>
+                  </div>
+                  <!-- year -->
+                  <div class="toys-range__year toys-year">
+                    <h3 class="toys-year__title range-title">Год приобретения:</h3>
+                    <!-- slider -->
+                    <div class="toys-year__slider range-slider">
+                      <output class="range-slider__output" id="leftYearOutput"></output>
+                      <div class="range-slider__track" id="yearRangeSlider"></div>
+                      <output class="range-slider__output" id="rightYearOutput"></output>
+                    </div>
+                  </div>
+                </div>
+                <!-- sort -->
+                <div class="toys-controls__sort toys-sort">
+                  <h2 class="toys-sort__title controls-title">Сортировка</h2>
+                  <select class="toys-sort__select" id="toysSelect">
+                    <option value="sort-name-max" selected>По названию от «А» до «Я»</option>
+                    <option value="sort-name-min">По названию от «Я» до «А»</option>
+                    <option value="sort-year-max">Год приобретения по возрастанию</option>
+                    <option value="sort-year-min">Год приобретения по убыванию</option>
+                  </select>
+                  <button class="toys-sort__button" id="resetFiltersButton">Сброс фильтров</button>
+                </div>
+              </div>
+              <!-- cards -->
+              <div class="toys-content__cards toys-cards" id="cardsContainer"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page__tree tree-page" id="tree-page">
+          <div class="tree-page__container container">
+            <!-- content -->
+            <div class="tree-page__content tree-content">
+              <!-- settings -->
+              <div class="tree-content__settings tree-settings">
+                <!-- controls -->
+                <div class="tree-settings__controls tree-controls">
+                  <div class="tree-controls__audio" id="soundBtn"></div>
+                  <div class="tree-controls__snow" id="snowBtn"></div>
+                </div>
+                <!-- trees -->
+                <div class="tree-settings__trees tree-trees" id="treeButtons">
+                  <div class="tree-trees__item" data-tree="1"></div>
+                  <div class="tree-trees__item" data-tree="2"></div>
+                  <div class="tree-trees__item" data-tree="3"></div>
+                  <div class="tree-trees__item" data-tree="4"></div>
+                  <div class="tree-trees__item" data-tree="5"></div>
+                  <div class="tree-trees__item" data-tree="6"></div>
+                </div>
+                <!-- background -->
+                <div class="tree-settings__background tree-background" id="backgroundButtons">
+                  <div class="tree-background__item" data-bg="1"></div>
+                  <div class="tree-background__item" data-bg="2"></div>
+                  <div class="tree-background__item" data-bg="3"></div>
+                  <div class="tree-background__item" data-bg="4"></div>
+                  <div class="tree-background__item" data-bg="5"></div>
+                  <div class="tree-background__item" data-bg="6"></div>
+                  <div class="tree-background__item" data-bg="7"></div>
+                  <div class="tree-background__item" data-bg="8"></div>
+                  <div class="tree-background__item" data-bg="9"></div>
+                  <div class="tree-background__item" data-bg="10"></div>
+                </div>
+                <!-- garland -->
+                <div class="tree-settings__garland tree-garland">
+                  <!-- buttons -->
+                  <div class="tree-garland__buttons garland-buttons" id="garlandButtons">
+                    <div
+                      class="garland-buttons__button garland-buttons__button--multicolor"
+                      data-color="multicolor"
+                    ></div>
+                    <div class="garland-buttons__button garland-buttons__button--red" data-color="red"></div>
+                    <div class="garland-buttons__button garland-buttons__button--blue" data-color="blue"></div>
+                    <div class="garland-buttons__button garland-buttons__button--yellow" data-color="yellow"></div>
+                    <div class="garland-buttons__button garland-buttons__button--green" data-color="green"></div>
+                  </div>
+                  <!-- switcher -->
+                  <div class="tree-garland__switcher garland-switcher">
+                    <input type="checkbox" class="garland-switcher__input" id="switcher" name="onoffswitch" checked />
+                    <label for="switcher" class="garland-switcher__label switcher-label">
+                      <span class="switcher-label__inner"></span>
+                      <span class="switcher-label__toggle"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <!-- card -->
+              <div class="tree-content__card tree-card" id="treeCard">
+                <!-- snowflakes -->
+                <div class="tree-card__snowflakes snowflakes hide" id="snowflakes"></div>
+                <!-- garland -->
+                <div class="tree-card__garland" id="garland"></div>
+                <!-- map -->
+                <map class="tree-card__map" name="tree-map">
+                  <area
+                    shape="poly"
+                    coords="365,699,189,706,113,683,31,608,2,555,2,539,18,437,73,351,106,224,161,134,243,-1,306,75,353,144,399,221,424,359,452,459,496,550,444,664"
+                    id="area"
+                  />
+                </map>
+                <!-- image -->
+                <img
+                  class="tree-card__image"
+                  src="./assets/images/tree-1.png"
+                  alt="tree"
+                  usemap="#tree-map"
+                  id="treeImage"
+                  data-activetree="1"
+                />
+              </div>
+              <!-- toys -->
+              <div class="tree-content__toys tree-toys">
+                <h2 class="tree-toys__title">Игрушки</h2>
+                <!-- favorites -->
+                <div class="tree-toys__favorites favorites-toys" id="favoriteToys"></div>
+                <!-- decorate -->
+                <div class="tree-toys__decorate toys-decorate">
+                  <div class="toys-decorate__container">
+                    <!-- tree -->
+                    <div class="toys-decorate__tree decorate-tree" data-decorate="1">
+                      <img class="decorate-tree__image" src="./assets/images/tree-1.png" alt="decorate-tree" />
+                    </div>
+                    <!-- tree -->
+                    <div class="toys-decorate__tree decorate-tree" data-decorate="2">
+                      <img class="decorate-tree__image" src="./assets/images/tree-2.png" alt="decorate-tree" />
+                    </div>
+                    <!-- tree -->
+                    <div class="toys-decorate__tree decorate-tree" data-decorate="3">
+                      <img class="decorate-tree__image" src="./assets/images/tree-3.png" alt="decorate-tree" />
+                    </div>
+                    <!-- tree -->
+                    <div class="toys-decorate__tree decorate-tree" data-decorate="4">
+                      <img class="decorate-tree__image" src="./assets/images/tree-4.png" alt="decorate-tree" />
+                    </div>
+                    <!-- tree -->
+                    <div class="toys-decorate__tree decorate-tree" data-decorate="5">
+                      <img class="decorate-tree__image" src="./assets/images/tree-5.png" alt="decorate-tree" />
+                    </div>
+                    <!-- tree -->
+                    <div class="toys-decorate__tree decorate-tree" data-decorate="6">
+                      <img class="decorate-tree__image" src="./assets/images/tree-6.png" alt="decorate-tree" />
+                    </div>
+                  </div>
+                </div>
+                <button class="tree-toys__button button-save" id="buttonSave" disabled>Сохранить</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer class="footer">
+        <!-- container -->
+        <div class="footer__container container">
+          <!-- content -->
+          <div class="footer__content footer-content">
+            <!-- info -->
+            <div class="footer-content__info footer-info">
+              <span class="footer-info__copy">©</span>
+              <span class="footer-info__year">2021</span>
+              <a href="https://github.com/h4rb4rd" class="footer-info__github" target="_blank" rel="noopener noreferrer"
+                >Github</a
+              >
+            </div>
+            <a href="https://rs.school/js/" class="footer-content__logo" target="_blank" rel="noopener noreferrer"></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

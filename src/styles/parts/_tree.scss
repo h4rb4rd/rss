@@ -1,0 +1,554 @@
+.tree-page {
+  backdrop-filter: blur(0.3rem);
+}
+
+.tree-content {
+  display: grid;
+  overflow: hidden;
+  justify-items: center;
+  grid-template-areas: 'settings card toys';
+  grid-template-columns: 0.8fr 1.4fr 0.8fr; // todo
+  gap: 1rem;
+  width: 100%;
+}
+
+// settings ===================================
+.tree-settings {
+  grid-area: settings;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 100%;
+  max-width: 40rem;
+  width: 100%;
+  padding-top: 2.5rem;
+}
+
+.tree-controls,
+.tree-trees,
+.tree-background,
+.tree-garland {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.controls-item {
+  cursor: pointer;
+  width: 8rem;
+  height: 8rem;
+  gap: 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tree-controls {
+  &__audio {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    gap: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../assets/icons/audio.svg');
+    margin-right: 4rem;
+
+    &.active {
+      background-image: url('../assets/icons/mute.svg');
+    }
+  }
+
+  &__snow {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    gap: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../assets/icons/snowflake.svg');
+  }
+
+  &__audio.active,
+  &__snow.active {
+    filter: saturate(1.5) brightness(0.8);
+  }
+}
+
+.tree-trees {
+  &:before {
+    content: 'Выберите ёлку';
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    padding-left: 0;
+  }
+
+  &__item {
+    cursor: pointer;
+    width: 11rem;
+    height: 11rem;
+    gap: 2rem;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: auto 11rem;
+
+    &:nth-child(1) {
+      background-image: url('../assets/images/tree-1.png');
+    }
+    &:nth-child(2) {
+      background-image: url('../assets/images/tree-2.png');
+    }
+    &:nth-child(3) {
+      background-image: url('../assets/images/tree-3.png');
+    }
+    &:nth-child(4) {
+      background-image: url('../assets/images/tree-4.png');
+    }
+    &:nth-child(5) {
+      background-image: url('../assets/images/tree-5.png');
+    }
+    &:nth-child(6) {
+      background-image: url('../assets/images/tree-6.png');
+    }
+  }
+}
+
+.tree-background {
+  &:before {
+    content: 'Выберите фон';
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    padding-left: 0;
+  }
+  &__item {
+    cursor: pointer;
+    width: 6rem;
+    height: 6rem;
+    gap: 2rem;
+    border: 1px solid #cccc;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:nth-child(1) {
+      background-image: url('../assets/images/bg1.jpg');
+    }
+    &:nth-child(2) {
+      background-image: url('../assets/images/bg2.jpg');
+    }
+    &:nth-child(3) {
+      background-image: url('../assets/images/bg3.jpg');
+    }
+    &:nth-child(4) {
+      background-image: url('../assets/images/bg4.jpg');
+    }
+    &:nth-child(5) {
+      background-image: url('../assets/images/bg5.jpg');
+    }
+    &:nth-child(6) {
+      background-image: url('../assets/images/bg6.jpg');
+    }
+    &:nth-child(7) {
+      background-image: url('../assets/images/bg7.jpg');
+    }
+    &:nth-child(8) {
+      background-image: url('../assets/images/bg8.jpg');
+    }
+    &:nth-child(9) {
+      background-image: url('../assets/images/bg9.jpg');
+    }
+    &:nth-child(10) {
+      background-image: url('../assets/images/bg10.jpg');
+    }
+  }
+}
+
+.tree-garland {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 36rem;
+  height: 11rem;
+
+  &:before {
+    content: 'Гирлянда';
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    padding-left: 0;
+  }
+}
+
+.garland-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25rem;
+  padding: 1rem;
+
+  &__button {
+    cursor: pointer;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+
+    &--multicolor {
+      background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8);
+      box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, #ccc 0 2px 12px;
+    }
+    &--red {
+      background-color: #f00;
+      box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+    }
+    &--blue {
+      background-color: #24e0ff;
+      box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, #3f8cff 0 2px 14px;
+    }
+    &--yellow {
+      background-color: #ff0;
+      box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #ff0 0 2px 12px;
+    }
+    &--green {
+      background-color: #abff00;
+      box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89ff00 0 2px 12px;
+    }
+  }
+}
+
+.garland-switcher {
+  text-align: left;
+  position: relative;
+  width: 8.5rem;
+
+  &__input {
+    display: none;
+  }
+}
+
+.switcher-label {
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+  border: 1px solid #999999;
+  border-radius: 20px;
+
+  &__inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+
+    &:before,
+    &:after {
+      float: left;
+      width: 50%;
+      height: 3rem;
+      padding: 0;
+      line-height: 3rem;
+      font-size: 1.6rem;
+      color: $textColor;
+      font-weight: 600;
+      box-sizing: border-box;
+    }
+
+    &:before {
+      content: 'Вкл';
+      background-color: #237e8f;
+      color: $textColor;
+      padding-left: 1.2rem;
+    }
+
+    &:after {
+      content: 'Выкл';
+      text-align: right;
+      color: #666;
+      background-color: #eeeeee;
+      padding-right: 1rem;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    right: 55px;
+    width: 2.6rem;
+    background: $textColor;
+    border: 2px solid #999999;
+    border-radius: 20px;
+    margin: 0.2rem;
+    transition: all 0.3s ease-in 0s;
+  }
+}
+
+.garland-switcher__input:checked + .switcher-label .switcher-label__inner {
+  margin-left: 0;
+}
+
+.garland-switcher__input:checked + .switcher-label .switcher-label__toggle {
+  right: 0px;
+}
+
+// card =======================================
+.tree-card {
+  position: relative;
+  grid-area: card;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: calc(100vh - 14rem);
+  min-height: 75rem;
+  max-width: 80rem;
+  min-width: 45rem;
+  width: 100%;
+  max-height: 90rem;
+  background-image: url('../assets/images/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 2rem;
+  overflow: hidden;
+
+  &__snowflakes {
+    overflow: hidden;
+    position: absolute;
+    top: -12rem;
+    left: 0;
+    height: calc(100vh - 5rem);
+    width: 80rem;
+    z-index: 100;
+    pointer-events: none;
+
+    &.hide {
+      display: none;
+    }
+  }
+
+  &__garland {
+    overflow: hidden;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 16rem);
+    width: 80rem;
+    margin-left: -40rem;
+    pointer-events: none;
+    z-index: 90;
+  }
+
+  &__map {
+    display: inline;
+
+    area {
+      position: relative;
+      display: inline;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 50rem;
+    height: 71.4rem;
+  }
+}
+
+// toys =======================================
+.tree-toys {
+  grid-area: toys;
+  height: calc(100vh - 14rem);
+  min-height: 75rem;
+  max-width: 40rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    content: 'Игрушки';
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    padding-top: 2.5rem;
+  }
+}
+
+.favorites-toys {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.favorites-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  &__count {
+    align-self: flex-end;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    border-radius: 20px;
+    background-color: #24c5db;
+    padding: 0;
+    margin: 0;
+    margin-left: 5rem;
+    z-index: 10;
+  }
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: auto;
+    height: 6rem;
+    width: 6rem;
+    object-fit: contain;
+    cursor: move;
+  }
+}
+
+.toys-decorate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  padding-top: 2.5rem;
+  margin-bottom: 2rem;
+
+  &:before {
+    content: 'Вы нарядили';
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    padding-left: 0;
+  }
+
+  &__container {
+    display: flex;
+    gap: 1rem;
+    height: 14rem;
+    max-width: 33rem;
+    width: 100%;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      height: 1rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $hoverColor;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $bgColor;
+    }
+  }
+}
+
+.decorate-tree {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  min-width: 10rem;
+  height: 11rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  &.decorated {
+    border: 1px solid greenyellow;
+  }
+  &.decorated:after {
+    content: '\2713';
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+    color: greenyellow;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.button-save {
+  cursor: pointer;
+  position: relative;
+  width: 22rem;
+  height: 5rem;
+  border: 3px solid #278d9f;
+  border-radius: 30px;
+  background-color: rgba(31, 112, 127, 0.3);
+  backdrop-filter: blur(6px);
+  font-weight: 300;
+  font-size: 22px;
+  color: #fff;
+  transition: all 0.3s ease 0s;
+
+  &:disabled {
+    pointer-events: none;
+    filter: grayscale(1);
+  }
+
+  &:hover {
+    background-color: rgba(31, 112, 127, 0.7);
+  }
+}

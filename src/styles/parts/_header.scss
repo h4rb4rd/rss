@@ -1,0 +1,149 @@
+.header {
+  background-color: $bgColor;
+  padding: 0.5rem 0;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 28rem;
+  width: 100%;
+  margin-right: 2rem;
+
+  &__link {
+    position: relative;
+    text-transform: uppercase;
+    transition: color 0.3s ease 0s;
+    color: $textColor;
+    margin-right: 0.5rem;
+
+    &--logo {
+      display: block;
+      width: 4.8rem;
+      height: 6rem;
+      background-image: url('../assets/icons/tree.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: 0.3s;
+
+      &.active {
+        @extend %greenhover;
+      }
+
+      &.active:after {
+        display: none;
+      }
+
+      &:hover {
+        @extend %greenhover;
+      }
+    }
+
+    &:hover {
+      color: $hoverColor;
+    }
+
+    &.active:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 2.5rem;
+      transform: translateX(-50%);
+      height: 3px;
+      width: 100%;
+      background-color: #278d9f;
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+}
+
+.header-controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 50rem;
+  width: 100%;
+
+  &__clear {
+    font-family: 'Steppe', sans-serif;
+    font-size: 1.3rem;
+    height: 4rem;
+    font-weight: 600;
+    min-width: 14rem;
+    color: $textColor;
+    border: 2px solid #278d9f;
+    border-radius: 20px;
+    background-color: rgba(31, 112, 127, 1);
+    padding: 0 0.5rem;
+    margin-right: 3rem;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      background-color: rgba(203, 183, 122, 0.7);
+    }
+  }
+
+  &__search {
+    max-width: 24rem;
+    width: 100%;
+    height: 4rem;
+    color: $textColor;
+    border: 1px solid #278d9f;
+    border-radius: 20px;
+    background-color: rgba(31, 112, 127, 0.3);
+    background-image: url('../assets/icons/search.svg');
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    backdrop-filter: blur(6px);
+    padding: 0.5rem 2.5rem;
+    margin: 1rem 3rem 1rem 0;
+
+    &:focus {
+      border: 1px solid #30a5b9;
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+
+  &__select {
+    width: 4.8rem;
+    height: 6rem;
+    background-image: url('../assets/icons/ball-2.svg');
+    background-size: 4.8rem 6rem;
+    background-position: left -8px;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    padding-right: 0.2rem;
+
+    span {
+      display: inline-block;
+      min-width: 4rem;
+      height: 4rem;
+      text-align: center;
+      line-height: 4rem;
+      font-size: 2rem;
+      border-radius: 50%;
+      background-color: #278d9f;
+      margin-top: 1rem;
+      margin-left: 0.4rem;
+    }
+  }
+
+  &.hide {
+    display: none;
+  }
+}

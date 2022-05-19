@@ -1,0 +1,86 @@
+@media screen and (max-width: 1299.98px) {
+  .toys-page__content {
+    display: flex;
+    align-items: flex-start;
+  }
+  .toys-controls {
+    flex-direction: column;
+    width: auto;
+    margin-right: 2rem;
+  }
+
+  .toys-filters,
+  .toys-range,
+  .toys-sort {
+    max-width: 38rem;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .toys-cards {
+    overflow-y: auto;
+    max-height: 976px;
+    border: 3px solid #278d9f;
+    border-radius: 10px;
+    background: rgba(22, 41, 41, 0.5);
+    backdrop-filter: blur(1rem);
+    padding: 10px;
+
+    &::-webkit-scrollbar {
+      width: 0.8rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $hoverColor;
+      border-radius: 30px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $bgColor;
+      border-radius: 30px;
+    }
+  }
+}
+@media screen and (max-width: 1227.98px) {
+  .tree-content {
+    height: auto;
+    grid-template-areas:
+      'settings settings settings'
+      'card card toys';
+
+    padding-bottom: 3rem;
+  }
+
+  .tree-controls,
+  .tree-trees,
+  .tree-background,
+  .tree-garland {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .tree-settings {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .tree-garland {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .favorites-toys {
+    width: 100%;
+    min-width: 26rem;
+    max-height: 51rem;
+    overflow-y: auto;
+    border: 2px solid #24c5db;
+    border-radius: 10px;
+  }
+
+  .toys-decorate {
+    width: 22rem;
+    padding-top: 1rem;
+  }
+}
