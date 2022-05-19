@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/owfont-regular.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <!-- player -->
+        <div class="player">
+          <div class="player-controls">
+            <button class="play-prev player-icon"></button>
+            <button class="play player-icon"></button>
+            <button class="play-next player-icon"></button>
+            <div class="sound">
+              <div class="mute"></div>
+              <input
+                type="range"
+                name="volume"
+                class="volume"
+                min="0"
+                max="1"
+                step="0.05"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="status">
+            <div class="song"></div>
+            <div class="timeline">
+              <div class="progress">
+                <div class="filled"></div>
+              </div>
+              <span class="duration"></span>
+            </div>
+          </div>
+          <div class="list">
+            <span class="playlist-lang">Playlist</span>
+            <span class="list-arrow"></span>
+            <ul class="play-list"></ul>
+          </div>
+        </div>
+        <!-- weather -->
+        <div class="weather">
+          <input type="text" class="city" />
+          <i class="weather-icon owf"></i>
+          <div class="weather-error"></div>
+          <div class="description-container">
+            <span class="temperature"></span>
+            <span class="weather-description"></span>
+          </div>
+          <div class="wind"></div>
+          <div class="humidity"></div>
+        </div>
+      </header>
+      <!-- main -->
+      <main class="main">
+        <div class="card-container">
+          <div class="card">
+            <!-- greeting -->
+            <div class="greeting front">
+              <div class="time"></div>
+              <div class="date"></div>
+              <div class="text">
+                <span class="daytime"></span>
+                <input
+                  type="text"
+                  class="name"
+                  placeholder="[Enter name]"
+                  value=""
+                />
+              </div>
+              <div class="totodo">
+                <span class="to-list">Todo List</span>
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+            <!-- todo -->
+            <div class="todos back">
+              <h2 class="todo-title">Todo List</h2>
+              <form>
+                <input type="text" class="todo-input" />
+                <button class="todo-button" type="submit">
+                  <i class="fas fa-plus-square"></i>
+                </button>
+                <div class="select">
+                  <select name="todos" class="filter-todo">
+                    <option value="all" class="all">All</option>
+                    <option value="completed" class="completed">
+                      Completed
+                    </option>
+                    <option value="uncompleted" class="uncompleted">
+                      Uncompleted
+                    </option>
+                  </select>
+                </div>
+              </form>
+              <div class="todo-container">
+                <ul class="todo-list"></ul>
+              </div>
+              <div class="totodo">
+                <span class="to-greetings">Greetings</span>
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- arrows -->
+        <div class="arrows">
+          <button class="arrow left-arrow" id="left"></button>
+          <button class="arrow right-arrow" id="right"></button>
+        </div>
+        <div class="settings">
+          <div class="settings-icon">
+            <i class="weather-icon owf owf-950"></i>
+          </div>
+          <ul class="settings-content">
+            <li class="lang-set">
+              <span class="lang-title">Language</span>:&nbsp;<span
+                class="en lang-btn chosen"
+                >En</span
+              >&nbsp;<span class="ru lang-btn">Ru</span>
+            </li>
+            <li><span class="show-player show-el">Player</span></li>
+            <li><span class="show-weather show-el">Weather</span></li>
+            <li><span class="show-greetings show-el">Greeting</span></li>
+            <li><span class="show-quotes show-el">Quotes</span></li>
+          </ul>
+        </div>
+      </main>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="quotes">
+          <!-- quote btn -->
+          <button class="change-quote"></button>
+          <!-- quotes -->
+          <div>
+            <div class="quote">Loading...</div>
+            <div class="author">Loading...</div>
+          </div>
+        </div>
+        <div class="copyr">
+          <a href="https://github.com/h4rb4rd" class="github">h4rb4rd</a>
+          <a href="https://rs.school/js/" class="logo"
+            ><img src="./assets/svg/rs_school.svg" alt="logo"
+          /></a>
+          <span class="year">2021</span>
+        </div>
+      </footer>
+    </div>
+    <!-- scripts -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
