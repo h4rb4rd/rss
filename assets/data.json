@@ -1,0 +1,612 @@
+{
+  "portrait": [
+    {
+      "name": "American Gothic",
+      "author": "Grant Wood",
+      "year": "1930",
+      "id": "1"
+    },
+    {
+      "name": "Portrait of Madame X",
+      "author": "John Singer Sargent",
+      "year": "1884",
+      "id": "2"
+    },
+    { "name": "Le Rêve", "author": "Pablo Picasso", "year": "1932", "id": "3" },
+    {
+      "name": "Arnolfini Portrait",
+      "author": "Jan van Eyck",
+      "year": "1434",
+      "id": "4"
+    },
+    {
+      "name": "Portrait of Adele Bloch-Bauer I",
+      "author": "Gustav Klimt",
+      "year": "1907",
+      "id": "5"
+    },
+    {
+      "name": "The Two Fridas",
+      "author": "Frida Kahlo",
+      "year": "1939",
+      "id": "6"
+    },
+    {
+      "name": "The Night Watch",
+      "author": "Rembrandt van Rijn",
+      "year": "1642",
+      "id": "7"
+    },
+    {
+      "name": "Girl with a Pearl Earring",
+      "author": "Johannes Vermeer",
+      "year": "1665",
+      "id": "8"
+    },
+    {
+      "name": "The Maids of Honour",
+      "author": "Diego Velazquez",
+      "year": "1656",
+      "id": "9"
+    },
+    {
+      "name": "Mona Lisa",
+      "author": "Leonardo da Vinci",
+      "year": "1517",
+      "id": "10"
+    }
+  ],
+  "landscape": [
+    {
+      "name": "View of Toledo",
+      "author": "El Greco",
+      "year": "1596",
+      "id": "1"
+    },
+    {
+      "name": "Irises",
+      "author": "Vincent Van Gogh",
+      "year": "1889",
+      "id": "2"
+    },
+    {
+      "name": "The Fighting Temera",
+      "author": "J.M.W. Turner",
+      "year": "1839",
+      "id": "3"
+    },
+    {
+      "name": "The Hay Wain",
+      "author": "John Constable",
+      "year": "1821",
+      "id": "4"
+    },
+    {
+      "name": "Impression, Sunrise",
+      "author": "Claude Monet",
+      "year": "1872",
+      "id": "5"
+    },
+    {
+      "name": "Wanderer above the Sea of Fog",
+      "author": "Caspar David Friedrich",
+      "year": "1818",
+      "id": "6"
+    },
+    {
+      "name": "Christina's World",
+      "author": "Andrew Wyeth",
+      "year": "1948",
+      "id": "7"
+    },
+    {
+      "name": "The Great Wave off Kanagawa",
+      "author": "Katsushika Hokusai",
+      "year": "1829",
+      "id": "8"
+    },
+    {
+      "name": "Water Lilies",
+      "author": "Claude Monet",
+      "year": "1896",
+      "id": "9"
+    },
+    {
+      "name": "The Starry Night",
+      "author": "Vincent Van Gogh",
+      "year": "1889",
+      "id": "10"
+    }
+  ],
+  "still-life": [
+    {
+      "name": "Still Life Series",
+      "author": "Tom Wesselmann",
+      "year": "1962",
+      "id": "1"
+    },
+    {
+      "name": "Vanitas with Violin and Glass Ball",
+      "author": "Pieter Claesz",
+      "year": "1628",
+      "id": "2"
+    },
+    {
+      "name": "Basket of Fruit",
+      "author": "Caravaggio",
+      "year": "1599",
+      "id": "3"
+    },
+    {
+      "name": "Natura morta (Still Life)",
+      "author": "Giorgio Morandi",
+      "year": "1956",
+      "id": "4"
+    },
+    {
+      "name": "The Basket of Apples",
+      "author": "Paul Cezanne",
+      "year": "1895",
+      "id": "5"
+    },
+    {
+      "name": "Still Life with Lemons, Oranges and a Rose",
+      "author": "Francisco de Zurbaran",
+      "year": "1633",
+      "id": "6"
+    },
+    {
+      "name": "The Ray (La Raie)",
+      "author": "Jean-Baptiste-Simeon Chardin",
+      "year": "1728",
+      "id": "7"
+    },
+    {
+      "name": "Violin and Candlestick",
+      "author": "Georges Braque",
+      "year": "1910",
+      "id": "8"
+    },
+    {
+      "name": "Rideau, Cruchon et Compotier",
+      "author": "Paul Cezanne",
+      "year": "1894",
+      "id": "9"
+    },
+    {
+      "name": "Sunflowers series",
+      "author": "Vincent van Gogh",
+      "year": "1888",
+      "id": "10"
+    }
+  ],
+  "impressionism": [
+    {
+      "name": "The Floor Scrapers",
+      "author": "Gustave Caillebotte",
+      "year": "1875",
+      "id": "1"
+    },
+    {
+      "name": "The Absinthe Drinker",
+      "author": "Edgar Degas",
+      "year": "1876",
+      "id": "2"
+    },
+    {
+      "name": "Pont Boieldieu in Rouen, Rainy Weather",
+      "author": "Camille Pissarro",
+      "year": "1896",
+      "id": "3"
+    },
+    {
+      "name": "Luncheon of the Boating Party",
+      "author": "Pierre-Auguste Renoir",
+      "year": "1880",
+      "id": "4"
+    },
+    {
+      "name": "Paris Street; Rainy Day",
+      "author": "Gustave Caillebotte",
+      "year": "1877",
+      "id": "5"
+    },
+    {
+      "name": "The Luncheon on the Grass",
+      "author": "Edouard Manet",
+      "year": "1862",
+      "id": "6"
+    },
+    {
+      "name": "Impression, Sunrise",
+      "author": "Claude Monet",
+      "year": "1872",
+      "id": "7"
+    },
+    {
+      "name": "A Bar at the Folies-Bergère",
+      "author": "Edouard Manet",
+      "year": "1882",
+      "id": "8"
+    },
+    {
+      "name": "Dance at Le Moulin de la Galette",
+      "author": "Pierre-Auguste Renoir",
+      "year": "1876",
+      "id": "9"
+    },
+    {
+      "name": "Water Lilies",
+      "author": "Claude Monet",
+      "year": "1896",
+      "id": "10"
+    }
+  ],
+  "expressionism": [
+    {
+      "name": "The Scream",
+      "author": "Edvard Munch",
+      "year": "1893",
+      "id": "1"
+    },
+    {
+      "name": "The Blue Rider",
+      "author": "Wassily Kandinsky",
+      "year": "1903",
+      "id": "2"
+    },
+    {
+      "name": "Dance Around the Golden Calf",
+      "author": "Emil Nolde",
+      "year": "1910",
+      "id": "3"
+    },
+    {
+      "name": "The Large Blue Horses",
+      "author": "Franz Marc",
+      "year": "1911",
+      "id": "4"
+    },
+    {
+      "name": "Self-Portrait with Chinese Lantern Plant",
+      "author": "Egon Schiele",
+      "year": "1912",
+      "id": "5"
+    },
+    {
+      "name": "Street, Berlin",
+      "author": "Ernst Ludwig Kirchner",
+      "year": "1913",
+      "id": "6"
+    },
+    {
+      "name": "The Night",
+      "author": "Max Beckmann",
+      "year": "1918",
+      "id": "7"
+    },
+    {
+      "name": "Reclining Nude",
+      "author": "Amedeo Modigliani",
+      "year": "1919",
+      "id": "8"
+    },
+    {
+      "name": "Portrait of a Man",
+      "author": "Erich Heckel",
+      "year": "1919",
+      "id": "9"
+    },
+    {
+      "name": "Castle and Sun",
+      "author": "Paul Klee",
+      "year": "1928",
+      "id": "10"
+    }
+  ],
+  "avant-garde": [
+    {
+      "name": "Great Western Railway",
+      "author": "JMW Turner",
+      "year": "1844",
+      "id": "1"
+    },
+    {
+      "name": "Impression, Sunrise",
+      "author": "Claude Monet",
+      "year": "1872",
+      "id": "2"
+    },
+    {
+      "name": "Les Demoiselles d'Avignon",
+      "author": "Pablo Picasso",
+      "year": "1907",
+      "id": "3"
+    },
+    {
+      "name": "The Persistence of Memory",
+      "author": "Salvador Dali",
+      "year": "1931",
+      "id": "4"
+    },
+    {
+      "name": "Autumn River",
+      "author": "Jackson Pollock",
+      "year": "1950",
+      "id": "5"
+    },
+    {
+      "name": "Composition VII",
+      "author": "Wassily Kandinsky",
+      "year": "1913",
+      "id": "6"
+    },
+    {
+      "name": "Black Square",
+      "author": "Kazimir Malevich",
+      "year": "1915",
+      "id": "7"
+    },
+    {
+      "name": "Angels Throwing Stones on the City",
+      "author": "Natalia Goncharova",
+      "year": "1911",
+      "id": "8"
+    },
+    {
+      "name": "Composition with Figures",
+      "author": "Lyubov Popova",
+      "year": "1915",
+      "id": "9"
+    },
+    {
+      "name": "Self-portrait",
+      "author": "Ivan Puni",
+      "year": "1921",
+      "id": "10"
+    }
+  ],
+  "renaissance": [
+    {
+      "name": "The Birth of Venus",
+      "author": "Sandro Botticelli",
+      "year": "1486",
+      "id": "1"
+    },
+    {
+      "name": "Assumption of the Virgin",
+      "author": "Titian",
+      "year": "1518",
+      "id": "2"
+    },
+    {
+      "name": "Sistine Madonna",
+      "author": "Raphael",
+      "year": "1512",
+      "id": "3"
+    },
+    {
+      "name": "Primavera",
+      "author": "Sandro Botticelli",
+      "year": "1482",
+      "id": "4"
+    },
+    {
+      "name": "The Last Judgment",
+      "author": "Michelangelo Buonarroti",
+      "year": "1541",
+      "id": "5"
+    },
+    {
+      "name": "Kiss of Judas",
+      "author": "Giotto di Bondone",
+      "year": "1306",
+      "id": "6"
+    },
+    {
+      "name": "The School of Athens",
+      "author": "Raphael",
+      "year": "1511",
+      "id": "7"
+    },
+    {
+      "name": "The Last Supper",
+      "author": "Leonardo Da Vinci",
+      "year": "1498",
+      "id": "8"
+    },
+    {
+      "name": "The Creation of Adam",
+      "author": "Michelangelo Buonarroti",
+      "year": "1512",
+      "id": "9"
+    },
+    {
+      "name": "Mona Lisa",
+      "author": "Leonardo da Vinci",
+      "year": "1517",
+      "id": "10"
+    }
+  ],
+  "surrealism": [
+    {
+      "name": "The Song of Love",
+      "author": "Giorgio de Chirico",
+      "year": "1914",
+      "id": "1"
+    },
+    {
+      "name": "Forest and Dove",
+      "author": "Max Ernst",
+      "year": "1927",
+      "id": "2"
+    },
+    {
+      "name": "Mama, Papa is Wounded!",
+      "author": "Yves Tanguy",
+      "year": "1927",
+      "id": "3"
+    },
+    {
+      "name": "Self-Portrait: The Inn of the Dawn Horse",
+      "author": "Leonora Carrington",
+      "year": "1937",
+      "id": "4"
+    },
+    {
+      "name": "The Elephant Celebes",
+      "author": "Max Ernst",
+      "year": "1921",
+      "id": "5"
+    },
+    {
+      "name": "The Son of Man",
+      "author": "Rene Magritte",
+      "year": "1964",
+      "id": "6"
+    },
+    {
+      "name": "The Harlequin's Carnival",
+      "author": "Joan Miro",
+      "year": "1925",
+      "id": "7"
+    },
+    {
+      "name": "Swans Reflecting Elephants",
+      "author": "Salvador Dali",
+      "year": "1937",
+      "id": "8"
+    },
+    {
+      "name": "The Great Masturbator",
+      "author": "Salvador Dali",
+      "year": "1929",
+      "id": "9"
+    },
+    {
+      "name": "The Persistence of Memory",
+      "author": "Salvador Dali",
+      "year": "1931",
+      "id": "10"
+    }
+  ],
+  "kitsch": [
+    {
+      "name": "Two Clowns",
+      "author": "Bernard Buffet",
+      "year": "1955",
+      "id": "1"
+    },
+    {
+      "name": "Horses In The Waves",
+      "author": "Jim Warren",
+      "year": "1992",
+      "id": "2"
+    },
+    {
+      "name": "Brooklyn Bridge",
+      "author": "Leroy Neiman",
+      "year": "1995",
+      "id": "3"
+    },
+    {
+      "name": "Sunset On Lamplight Lane",
+      "author": "Thomas Kinkade",
+      "year": "1995",
+      "id": "4"
+    },
+    {
+      "name": "The Singing Butler",
+      "author": "Jack Vetriano",
+      "year": "1992",
+      "id": "5"
+    },
+    {
+      "name": "Eyes Wide Open, Eyes Shut",
+      "author": "Yoshimoto Nara",
+      "year": "1959",
+      "id": "6"
+    },
+    {
+      "name": "Happy Mask, Unhappy Boy",
+      "author": "Margaret Keane",
+      "year": "1960",
+      "id": "7"
+    },
+    {
+      "name": "Green Lady",
+      "author": "Vladimir Tretchikoff",
+      "year": "1952",
+      "id": "8"
+    },
+    {
+      "name": "Return of the sun",
+      "author": "Odd Nerdrum",
+      "year": "1985",
+      "id": "9"
+    },
+    { "name": "Lucifer", "author": "Roberto Ferri", "year": "2013", "id": "10" }
+  ],
+  "minimalism": [
+    {
+      "name": "Die Fahne Hoch!",
+      "author": "Frank Stella",
+      "year": "1959",
+      "id": "1"
+    },
+    {
+      "name": "Yellow Piece",
+      "author": "Ellsworth Kelly",
+      "year": "1966",
+      "id": "2"
+    },
+    {
+      "name": "Knot (Pink)",
+      "author": "Brent Hallard",
+      "year": "2015",
+      "id": "3"
+    },
+    {
+      "name": "Red Yellow Blue II",
+      "author": "Ellsworth Kelly",
+      "year": "1965",
+      "id": "4"
+    },
+    {
+      "name": "Gold Leaf (Friendship)",
+      "author": "Agnes Martin",
+      "year": "1963",
+      "id": "5"
+    },
+    {
+      "name": "With my Back to the World",
+      "author": "Agnes Martin",
+      "year": "1997",
+      "id": "6"
+    },
+    {
+      "name": "Harran II",
+      "author": "Frank Stella",
+      "year": "1967",
+      "id": "7"
+    },
+    {
+      "name": "Specific Objects",
+      "author": "Richard Caldicott",
+      "year": "2013",
+      "id": "8"
+    },
+    {
+      "name": "Hyena Stomp",
+      "author": "Frank Stella",
+      "year": "1962",
+      "id": "9"
+    },
+    {
+      "name": "The Marriage of Reason and Squalor, II",
+      "author": "Frank Stella",
+      "year": "1959",
+      "id": "10"
+    }
+  ]
+}

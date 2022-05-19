@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/puzzle.css" />
+    <title>Puzzle Qiuiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="Puzzle" class="content">
+        <h2 class="animated-title">Puzzle</h2>
+        <!-- Puzzle -->
+        <div class="puzzle">
+          <div id="mycanvas" class="canvas">
+            <div class="canvas-bg" id="canvasBg"></div>
+          </div>
+          <div class="scoreboard-wrapper">
+            <div class="scoreboard-info">
+              <div class="scoreboard-item">
+                <p>Moves</p>
+                <p id="moves">0</p>
+              </div>
+              <div class="scoreboard-item">
+                <p>Solved?</p>
+                <p id="solved">No</p>
+              </div>
+            </div>
+            <div class="scoreboard-buttons">
+              <button id="new-game" class="btn btn--yellow">New game!</button>
+              <button id="hint" class="btn">Show hint</button>
+            </div>
+          </div>
+        </div>
+        <a href="./index.html" class="btn btn--yellow"
+          >Go Home <i class="fas fa-home"></i
+        ></a>
+      </div>
+      <div class="work-info">
+        <a class="gh-page" href="https://github.com/h4rb4rd">#h4rb4rd</a>
+        <a class="rss-link" href="https://rs.school/js/">
+          <img src="assets/rslogo2.svg" alt="rss-school"
+        /></a>
+        <span class="app-year">2021</span>
+      </div>
+    </div>
+    <script src="./js/puzzle.js"></script>
+  </body>
+</html>

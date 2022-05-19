@@ -1,0 +1,117 @@
+.puzzle {
+  margin-bottom: 4rem;
+}
+.canvas {
+  position: relative;
+  overflow: hidden;
+  width: 50rem;
+  height: 50rem;
+  margin-bottom: 2rem;
+  position: relative;
+  box-shadow: 0 0 25px var(--color-blue);
+  border-radius: 25px;
+  background-color: var(--color-blue);
+}
+.canvas-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#canvas {
+  width: 12.5rem;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: bottom;
+  border: 0.5px solid var(--color-blue);
+}
+.scoreboard-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50rem;
+  height: 5rem;
+}
+
+.scoreboard-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scoreboard-item {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  color: var(--color-yellow);
+  font-size: 2rem;
+  border: 2px solid var(--color-blue);
+  min-width: 10rem;
+  padding: 1rem 0.5rem;
+}
+.scoreboard-item:not(:last-child),
+.scoreboard-item p:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.scoreboard-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scoreboard-buttons .btn {
+  border: none;
+  font-size: 2rem;
+  width: unset;
+  min-width: 10rem;
+  padding: 1rem 0.5rem;
+  margin-bottom: 0;
+}
+.scoreboard-buttons .btn:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 767.98px) {
+  .puzzle {
+    margin-bottom: 6rem;
+  }
+  .canvas {
+    width: 40rem;
+    height: 40rem;
+    margin-bottom: 4rem;
+  }
+  #canvas {
+    width: 10rem;
+  }
+  .scoreboard-wrapper {
+    flex-direction: column;
+    width: 40rem;
+  }
+  .scoreboard-info {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .canvas {
+    width: 30rem;
+    height: 30rem;
+  }
+  #canvas {
+    width: 7.5rem;
+  }
+  .scoreboard-wrapper {
+    width: 30rem;
+  }
+
+  .scoreboard-item {
+    padding: 0.5rem 0.5rem;
+  }
+}

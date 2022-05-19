@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/game.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="game" class="content">
+        <div id="hud" class="hud">
+          <div class="hud-item">
+            <p id="progressText" class="hud-prefix">Question</p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+          <div class="hud-item" id="hudTimer">
+            <p class="hud-prefix">Time</p>
+            <h2 class="hud-main-text" id="hudTimeValue">0</h2>
+          </div>
+          <div class="hud-item">
+            <p class="hud-prefix">Score</p>
+            <h2 class="hud-main-text" id="score">0</h2>
+          </div>
+        </div>
+        <h3 id="questionTitle" class="animated-title">What is the answer to this question</h3>
+        <div class="paint" id="paint">
+          <img src="./assets/paints/portrait/1.jpg" alt="paint" />
+        </div>
+        <div class="choices">
+          <div class="choice">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text">Choice 1</p>
+          </div>
+          <div class="choice">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text">Choice 2</p>
+          </div>
+          <div class="choice">
+            <p class="choice-prefix">C</p>
+            <p class="choice-text">Choice 3</p>
+          </div>
+          <div class="choice">
+            <p class="choice-prefix">D</p>
+            <p class="choice-text">Choice 4</p>
+          </div>
+        </div>
+        <div class="game-buttons">
+          <a href="./categories.html" class="btn">Categories<i class="fas fa-stream"></i></a>
+          <a href="./index.html" class="btn btn--yellow">Go Home <i class="fas fa-home"></i></a>
+        </div>
+      </div>
+      <div class="work-info">
+        <a class="gh-page" href="https://github.com/h4rb4rd">#h4rb4rd</a>
+        <a class="rss-link" href="https://rs.school/js/"> <img src="assets/rslogo2.svg" alt="rss-school" /></a>
+        <span class="app-year">2021</span>
+      </div>
+    </div>
+    <div id="modal"></div>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/game.js"></script>
+  </body>
+</html>

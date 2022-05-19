@@ -1,0 +1,135 @@
+.cards {
+  position: relative;
+  margin-bottom: 5rem;
+}
+.cards-grid {
+  overflow: hidden;
+  height: 36rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 3rem;
+  grid-gap: 4rem 1.5rem;
+}
+
+.cards-grid.showed {
+  height: 100%;
+}
+
+.show-btn {
+  display: none;
+  position: absolute;
+  bottom: -4.5rem;
+  left: 50%;
+  border: none;
+  transform: translate(-50%);
+  font-size: 1.8rem;
+  width: 15rem;
+  padding: 0.5rem 0;
+}
+
+.card {
+  display: block;
+  cursor: pointer;
+  height: 12rem;
+  width: 12rem;
+  color: #fff7db;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  pointer-events: auto;
+}
+
+.cards-grid li {
+  font-size: 1.4rem;
+  color: #fff;
+  position: relative;
+  border: 3px solid var(--color-blue);
+  background-image: none;
+  border-radius: 10px;
+  background-size: 150%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: background 0.3s ease-in-out 0s;
+}
+
+.card:after {
+  content: "Play";
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-yellow);
+  font-size: 2.4rem;
+  pointer-events: none;
+}
+
+.cards-grid li h4 {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  width: 100%;
+  background-color: var(--color-blue);
+}
+
+.card-details {
+  position: absolute;
+  color: #fff;
+  background-color: var(--color-blue);
+  border-radius: 5px;
+  padding: 0.3rem;
+  top: -0.3rem;
+  right: -0.3rem;
+}
+
+.cards-grid li.gray .score-btn {
+  display: none;
+}
+
+.score-btn {
+  position: absolute;
+  top: -3.2rem;
+  font-size: 1.4rem;
+  max-width: 100%;
+  padding: 0.5rem 0;
+  margin-bottom: 0;
+}
+
+.score-btn i {
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+}
+
+@media screen and (min-width: 767.98px) {
+  .cards-grid li:hover {
+    filter: none;
+    background-size: 200%;
+  }
+
+  .card:hover::after {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .cards {
+    margin-bottom: 9rem;
+  }
+  .show-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .cards-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 479.98px) {
+  .cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

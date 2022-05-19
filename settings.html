@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/settings.css" />
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="settings" class="content">
+        <h2 class="animated-title">Settings</h2>
+        <h3>Quiz timer</h3>
+        <div class="time-option">
+          <div class="timepicker">
+            <i class="far fa-clock"></i>
+            <select name="timepicker" id="timepicker">
+              <option value="5">5 sec</option>
+              <option value="10">10 sec</option>
+              <option value="15">15 sec</option>
+              <option value="20">20 sec</option>
+              <option value="25">25 sec</option>
+              <option value="30" selected>30 sec</option>
+            </select>
+          </div>
+          <div class="time-checkbox">
+            <input
+              type="checkbox"
+              id="timer"
+              name="timer"
+              class="settings-checkbox"
+            />
+            <label for="timer" class="settings-label"><span>Timer</span></label>
+          </div>
+        </div>
+        <h3>Volume</h3>
+        <div class="volume-options">
+          <div class="volume-level">
+            <i class="fas fa-music"></i>
+            <input
+              type="range"
+              name="volume"
+              class="volume-slider"
+              id="volumeSlider"
+              min="0"
+              max="1"
+              step="0.05"
+              value="0.5"
+            />
+            <span class="volume-value" id="volumeValue">0%</span>
+          </div>
+          <div class="volume-checkbox">
+            <input
+              type="checkbox"
+              id="volume"
+              name="volume"
+              class="settings-checkbox"
+            />
+            <label for="volume" class="settings-label"><span>Off</span></label>
+          </div>
+        </div>
+        <a href="./index.html" class="btn btn--yellow"
+          >Home <i class="fas fa-home"></i
+        ></a>
+      </div>
+      <div class="work-info">
+        <a class="gh-page" href="https://github.com/h4rb4rd">#h4rb4rd</a>
+        <a class="rss-link" href="https://rs.school/js/">
+          <img src="assets/rslogo2.svg" alt="rss-school"
+        /></a>
+        <span class="app-year">2021</span>
+      </div>
+    </div>
+    <script src="./js/settings.js"></script>
+  </body>
+</html>

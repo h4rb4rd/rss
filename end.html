@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <link rel="stylesheet" href="./css/end.css" />
+    <title>End</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="end" class="content">
+        <h4 id="finalScore">Score</h4>
+        <div class="pictures-container">
+          <div id="picturesGrid" class="score-pictures"></div>
+          <button type="button" id="showMoreBtn" class="show-btn btn btn--yellow">
+            <span id="showBtnText">Show More</span>
+            <i id="showBtnIcon" class="fas fa-caret-down"></i>
+          </button>
+        </div>
+        <form class="end-form-container">
+          <h2 id="endText">Enter your name below to save your score!</h2>
+          <input type="text" name="name" id="username" placeholder="Enter your name" />
+          <button type="submit" class="btn" id="saveScoreBtn" disabled>Save</button>
+        </form>
+        <a href="./game.html" class="btn" id="playAgainBtn">Play Again</a>
+        <a href="./index.html" class="btn btn--yellow" id="homeBtn">Go Home <i class="fas fa-home"></i></a>
+      </div>
+      <div class="work-info">
+        <a class="gh-page" href="https://github.com/h4rb4rd">#h4rb4rd</a>
+        <a class="rss-link" href="https://rs.school/js/"> <img src="assets/rslogo2.svg" alt="rss-school" /></a>
+        <span class="app-year">2021</span>
+      </div>
+      <div class="fireworks" id="fireworks">
+        <h2>WOW! 10/10</h2>
+        <canvas id="fireworksCanvas"></canvas>
+      </div>
+    </div>
+
+    <div id="score-modal"></div>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/end.js"></script>
+  </body>
+</html>

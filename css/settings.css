@@ -1,0 +1,161 @@
+.content {
+  width: 32rem;
+}
+
+h3 {
+  color: var(--color-yellow);
+  margin-bottom: 3.5rem;
+}
+
+.time-option {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.settings-checkbox {
+  display: none;
+}
+
+.settings-checkbox:checked + .settings-label::after {
+  transform: scale(1);
+}
+
+.settings-label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 2.4rem;
+  color: var(--color-yellow);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.settings-label span {
+  min-width: 5rem;
+}
+
+.settings-label:before {
+  content: "";
+  align-self: flex-start;
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid var(--color-blue);
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.settings-label::after {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: var(--color-yellow);
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+  transform: scale(0);
+}
+
+.timepicker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 18rem;
+}
+.timepicker i,
+.volume-level i {
+  font-size: 3.5rem;
+  color: var(--color-yellow);
+  margin-right: 1rem;
+}
+
+.timepicker select {
+  display: block;
+  width: 100%;
+  background: none;
+  border: 3px solid var(--color-blue);
+  padding: 0.5rem 3.5rem 0.5rem 1.5rem;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearence: none;
+  appearance: none;
+  font-family: inherit;
+  font-size: 2.4rem;
+  color: var(--color-yellow);
+}
+
+.timepicker option {
+  background-color: var(--color-blue);
+}
+
+.timepicker::after {
+  content: "";
+  display: block;
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: var(--color-yellow) transparent transparent transparent;
+
+  position: absolute;
+  top: 50%;
+  right: 1.6rem;
+  z-index: 1;
+  margin-top: -0.3rem;
+  pointer-events: none;
+}
+
+.timepicker select:focus {
+  border-color: var(--color-yellow);
+  outline: none;
+}
+
+/*  --------------------------------------------------------------------------- */
+.volume-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 7rem;
+}
+
+.volume-slider {
+  background: linear-gradient(
+    to right,
+    rgb(8, 114, 244) 0%,
+    rgb(8, 114, 244) 40%,
+    rgb(255, 247, 9) 40%,
+    rgb(255, 247, 9) 100%
+  );
+
+  border-radius: 2px;
+  height: 0.7rem;
+  width: 9rem;
+  outline: none;
+  transition: background 450ms ease-in;
+  margin-right: 1rem;
+  -webkit-appearance: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: var(--color-blue);
+}
+
+.volume-value {
+  width: 6.5rem;
+  font-size: 2.4rem;
+  color: var(--color-yellow);
+  margin-right: 1rem;
+}
+
+.volume-level {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
