@@ -7,7 +7,7 @@ const rightBtn = document.getElementById('right')
 
 // set day time
 let timesOfDay = ''
-let timeofDayText = ''
+let timesOfDayText = ''
 
 updateDayTime()
 
@@ -18,13 +18,13 @@ function initSlides() {
 	for (let i = 0; i < 20; i++) {
 		if (i < 9) {
 			slides.push(
-				`https://raw.githubusercontent.com/h4rb4rd/stage1-tasks/assets/images/${timesOfDay}/0${
+				`https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${timesOfDay}/0${
 					i + 1
 				}.jpg`
 			)
 		} else {
 			slides.push(
-				`https://raw.githubusercontent.com/h4rb4rd/stage1-tasks/assets/images/${timesOfDay}/${
+				`https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/${timesOfDay}/${
 					i + 1
 				}.jpg`
 			)
@@ -195,6 +195,7 @@ function updateDayTime() {
 	let value = localStorage.getItem('language') || language
 	const date = new Date()
 	const hours = date.getHours()
+
 	if (hours >= 6 && hours < 12) {
 		timesOfDay = 'morning'
 		timesOfDayText = value === 'en' ? 'Good morning' : 'Доброе утро'
@@ -204,7 +205,7 @@ function updateDayTime() {
 	} else if (hours >= 18 && hours < 24) {
 		timesOfDay = 'evening'
 		timesOfDayText = value === 'en' ? 'Good evening' : 'Добрый вечер'
-	} else if (hours >= 24 && hours < 6) {
+	} else if (hours >= 0 && hours < 6) {
 		timesOfDay = 'night'
 		timesOfDayText = value === 'en' ? 'Good night' : 'Доброй ночи'
 	}
@@ -1162,7 +1163,3 @@ showGreetingsBtn.addEventListener('click', showGreetings)
 showQuotesBtn.addEventListener('click', showQuotes)
 
 document.addEventListener('click', e => clickOutsideSettings(e))
-
-const functionalList =
-	'1) Часы и календарь +15 \n2) Приветствие +10 \n3) Смена фонового изображения +20\n4) Виджет погоды +15\n5) Виджет цитата дня +10\n6) Аудиоплеер +15\n7) Продвинутый аудиоплеер (реализуется без использования библиотек) +20 \nPS:(Не стал колхозить общее время трека и кнопку play/pause в плейлисте т.к. посчитал, что это портит вид приложения. При этом сделал остановку и проигрывание по клику на сам трек. Оценка на усмотрение проверяющего)\n8) Перевод приложения на два языка (en/ru или en/be) +15\n9) - +0 \n10) Настройки приложения +14\n11) Дополнительный функционал на выбор +10 (Todo List)\nИтого 144'
-console.log(functionalList)
