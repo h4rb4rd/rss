@@ -1,0 +1,179 @@
+.garage {
+  display: flex;
+  flex-direction: column;
+}
+
+.garage-options {
+  display: flex;
+  flex-direction: column;
+  background-color: $mainColor;
+  max-width: 40rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.options-set {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  .text-input {
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 20rem;
+    height: 3rem;
+    border: 3px solid $mainColor;
+    margin-right: 1rem;
+  }
+
+  .color-input {
+    border: 3px solid $mainColor;
+    width: 7rem;
+    height: 3rem;
+    margin-right: 1rem;
+  }
+
+  .options-btn {
+    width: 8rem;
+    height: 2.8rem;
+
+    &:disabled {
+      pointer-events: none;
+      filter: grayscale(1);
+    }
+  }
+}
+
+.options-buttons {
+  display: flex;
+  width: 100%;
+  padding: 1rem 0;
+
+  .options-button {
+    width: 8rem;
+    height: 2.8rem;
+    margin-right: 1rem;
+
+    &:last-child {
+      width: 12rem;
+    }
+
+    &:disabled {
+      pointer-events: none;
+      filter: grayscale(1);
+    }
+  }
+}
+
+.garage-tracks {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.tracks-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.tracks-item {
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.track-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  .track-button {
+    height: 2.5rem;
+    width: 8rem;
+
+    &:disabled {
+      pointer-events: none;
+      filter: grayscale(1);
+    }
+  }
+
+  .track-model {
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+}
+
+.track-content {
+  display: flex;
+  align-items: center;
+  height: 7rem;
+
+  .track-road {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 6rem;
+    width: 100%;
+    border-bottom: 4px dashed $whiteColor;
+  }
+}
+
+.track-controls {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+
+  .controls-button {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.5rem;
+
+    &:disabled {
+      pointer-events: none;
+      filter: grayscale(1);
+    }
+  }
+}
+
+.track-car {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 12rem;
+}
+
+.track-finish {
+  position: absolute;
+  top: 50%;
+  right: 12rem;
+  transform: translate(0, -50%);
+}
+
+.car-image-svg {
+  width: 100px;
+  height: 50px;
+}
+
+.finish-image-svg {
+  width: 4.5rem;
+}
+
+.winner {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: $redColor;
+  background-color: $mainColor;
+  border-radius: 1rem;
+  padding: 5rem;
+
+  &.hidden {
+    display: none;
+  }
+}

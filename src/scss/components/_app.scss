@@ -1,0 +1,61 @@
+// глобальные стили ======================================/
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  font-family: $fontFamily;
+  font-weight: 400;
+  color: #fff;
+  background-color: #173750;
+}
+
+//Контейнер ============================================/
+.container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0rem 1.5rem;
+}
+
+// Общие стили ==========================================/
+.main {
+  flex: 1 1 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 3rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.page {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.pagination {
+  display: flex;
+
+  .pagination-button {
+    width: 8rem;
+  }
+}
+
+// страницы ============================================/
+@import './header';
+@import './garage';
+@import './winners';
+@import './footer';

@@ -1,0 +1,29 @@
+.header {
+  padding: 1rem 0;
+  background-color: $mainColor;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-image {
+  width: 14rem;
+  height: 5rem;
+}
+
+.header-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.header-menu {
+  display: flex;
+  align-items: flex-end;
+}

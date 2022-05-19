@@ -1,0 +1,119 @@
+.winners-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.winners-table {
+  display: flex;
+  flex-direction: column;
+  max-width: 42rem;
+  margin-right: 1rem;
+}
+
+.table-filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: $mainColor;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+
+  button {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -0.1rem;
+      transform: translateX(-50%);
+      height: 0.1rem;
+      width: 100%;
+      background-color: $whiteColor;
+    }
+  }
+
+  .filters-item {
+    position: relative;
+    text-align: center;
+    background-color: $mainColor;
+    color: $whiteColor;
+
+    &:nth-child(1) {
+      width: 6.5rem;
+    }
+    &:nth-child(2) {
+      width: 5rem;
+    }
+    &:nth-child(3) {
+      width: 8.5rem;
+    }
+    &:nth-child(4) {
+      width: 4rem;
+    }
+    &:nth-child(5) {
+      width: 8.1rem;
+    }
+
+    &.arrow::after {
+      position: absolute;
+      top: 50%;
+      right: -1rem;
+      transform: translate(0, -50%);
+      content: '';
+      font-weight: 500;
+      font-size: 1.8rem;
+    }
+    &.arrow {
+      &.arrow-up::after {
+        content: '\2191';
+      }
+
+      &.arrow-down::after {
+        content: '\2193';
+      }
+    }
+  }
+}
+
+.table-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  min-height: 43rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+
+  .table-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    svg {
+      width: 5rem;
+      height: 2rem;
+    }
+
+    span {
+      &:nth-child(1) {
+        width: 6.5rem;
+      }
+      &:nth-child(2) {
+        width: 5rem;
+      }
+      &:nth-child(3) {
+        width: 8.5rem;
+      }
+      &:nth-child(4) {
+        width: 4rem;
+      }
+      &:nth-child(5) {
+        width: 8.1rem;
+      }
+    }
+  }
+}

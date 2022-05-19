@@ -1,0 +1,12 @@
+// mormalize
+@import "~normalize.css";
+
+// utilits
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/fonts";
+@import "./utils/settings";
+@import "./utils/forms";
+
+// parts
+@import "./components/app";

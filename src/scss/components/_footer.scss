@@ -1,0 +1,30 @@
+.footer {
+  background-color: $mainColor;
+  padding: 1rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.2rem;
+
+  .github {
+    color: $whiteColor;
+    transition: color 0.3s ease 0s;
+
+    &:hover {
+      color: $redColor;
+    }
+  }
+
+  .rsslogo {
+    width: 16rem;
+    height: 6rem;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1);
+    }
+  }
+}
